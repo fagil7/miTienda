@@ -1,0 +1,77 @@
+/*reiniciar los estilos del navegador*/
+*::before,
+*::after{
+    margin: 0;
+}
+
+nav{
+    padding-top: 1rem;
+    background-color: #022855;
+    color: #dcdfe5;
+    display: flex; /*para quitar los bloques del nav*/
+    justify-content: space-between;/*para poner el titulo y el icono del carro en cada esquina de la pantalla*/
+}
+
+.submenu{
+    margin-right: 15vw;
+    position: relative;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.submenu #carrito{
+    display: none;
+    color: #001845;
+    margin: 1rem ;
+}
+
+/*cuando aparezca el mouse el carrito aparezca*/
+.submenu:hover #carrito{
+    display: none; /*ocultamos el carrito*/
+}
+
+.submenu:hover #carrito{
+    display: block;/*cuando pasamos el mouse aparece el carrito*/
+    position: absolute;
+}
+
+/*tamaño de la imagen de fondo*/
+.hero{
+    width: 100vw;
+}
+
+/*ancho de la imagen de fondo*/
+.hero img{
+    width: 100%;
+}
+
+.rebajado{
+    text-decoration: line-through;
+    color: #93979e;
+    
+}
+
+.full{
+    font-weight: bolder;
+    color: #03284d;
+}
+
+.card-subtitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    height: 5rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    background-color: lightblue;
+    text-align: center;
+    
+}
+
+footer p{
+    font-size: 1.5rem;
+}
